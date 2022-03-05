@@ -17,7 +17,7 @@ PCI\VEN_10DE&DEV_1C8D&SUBSYS_3...
 VEN_10DE DEV_1C8D
 ```
 
-3) Then redirect to the download-drivers.net website with the entered converted id data of driver.
+3) Then redirect to the download-drivers.net website with the entered converted id data.
 ```
 download-drivers.net/search?q=VEN_10DE%26DEV_1C8D
 ```

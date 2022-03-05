@@ -9,7 +9,7 @@ Download link: <a href="https://minhaskamal.github.io/DownGit/#/home?url=https:/
 
 2) Converts device instance id data to VEN_ and DEV_ value,
 
-3) Then redirects to the download-drivers.net website with the entered converted id data of driver.
+3) Then redirect to the download-drivers.net website with the entered converted id data of driver.
 
 ## First look
 

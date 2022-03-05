@@ -7,7 +7,7 @@ Download link: <a href="https://minhaskamal.github.io/DownGit/#/home?url=https:/
 
 1) The program extracts data about the name and instance id of the driver,
 
-2) Converts device instance id data to VEN_ I DEV_ value,
+2) Converts device instance id data to VEN_ and DEV_ value,
 
 3) Then redirects to the download-drivers.net website with the entered converted id data of driver.
 

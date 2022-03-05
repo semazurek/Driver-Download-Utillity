@@ -1,0 +1,5 @@
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\bin\Release\netcoreapp3.1\publish\WinFormsApp2.exe
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\bin\Release\netcoreapp3.1\publish\WinFormsApp2.dll
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\bin\Release\netcoreapp3.1\publish\WinFormsApp2.deps.json
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\bin\Release\netcoreapp3.1\publish\WinFormsApp2.runtimeconfig.json
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\bin\Release\netcoreapp3.1\publish\WinFormsApp2.pdb

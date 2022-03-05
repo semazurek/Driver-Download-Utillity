@@ -1,5 +1,5 @@
 # Driver-Download-Utillity
-Application created for Windows 10/11 to look for drivers that were not installed for some reason by windows update etc.
+Application created for Windows 10/11, looking for drivers that were not installed for some reason by windows update etc.
 
 Download link: <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/semazurek/Driver-Download-Utillity/blob/main/DDU.exe"> DDU.exe </a>
 

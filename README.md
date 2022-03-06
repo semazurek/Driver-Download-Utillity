@@ -5,7 +5,7 @@ Application created for Windows 10/11, looking for drivers that were not install
 
 Download link: <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/semazurek/Driver-Download-Utillity/blob/main/DDU.exe"> DDU.exe </a>
 
-## How it works
+## What it does
 
 1) The program extracts data about the name and instance id of the driver,
 ```

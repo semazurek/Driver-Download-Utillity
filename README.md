@@ -10,7 +10,7 @@ Download link: <a href="https://minhaskamal.github.io/DownGit/#/home?url=https:/
 1) The program extracts data about the name and instance id of the driver,
 ```
 3D Video Controller
-PCI\**VEN_10DE&DEV_1C8D**&SUBSYS_3...
+PCI\VEN_10DE&DEV_1C8D&SUBSYS_3...
 ```
 
 2) Converts device instance id data to VEN_ and DEV_ value,

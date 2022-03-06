@@ -60,12 +60,11 @@ namespace WinFormsApp2
 
             if (line == " " || line == "")
             {
-                MessageBox.Show("No drivers required to be installed were found.","Information");
                 richTextBox1.Text = "Nothing to do here.";
+                MessageBox.Show("No drivers required to be installed were found.","Information");
 
                 command.StartInfo.Arguments = "rm id.log; rm name.log";
                 command.Start();
-
             }
         }
 
@@ -87,6 +86,14 @@ namespace WinFormsApp2
 
         private void button3_MouseClick(object sender, MouseEventArgs e)
         {
+            Process command = new Process();
+            command.StartInfo.FileName = "powershell.exe";
+            command.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            command.StartInfo.UseShellExecute = false;
+            command.StartInfo.RedirectStandardOutput = true;
+            command.StartInfo.CreateNoWindow = true;
+            command.StartInfo.Arguments = "rm id.log; rm name.log";
+            command.Start();
             Application.Exit();
         }
 

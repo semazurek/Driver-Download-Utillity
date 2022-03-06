@@ -34,15 +34,11 @@ download-drivers.net/search?q=VEN_10DE%26DEV_1C8D
 
 ### Standard installation (Setup.exe)
 
-<img src="https://user-images.githubusercontent.com/85984736/156904240-f8de27c9-1772-41db-96c1-5bde46f7d669.png" width="760">
-
 ```
 Double click on setup.exe, installation.exe or other setup utility with .exe extension
 ```
 
 ### Advanced installation without .exe file via Device Manager (.Inf Files)
-
-<img src="https://user-images.githubusercontent.com/85984736/156904232-bf01ca66-3998-4793-b23c-652ee6b4cde6.gif" width="760">
 
 ```
 Device Manager -> Right Click on Driver -> Update Driver -> Browse my computer for drivers -> Browse -> Select folder -> Next.

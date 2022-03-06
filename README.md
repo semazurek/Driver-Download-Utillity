@@ -30,7 +30,7 @@ download-drivers.net/search?q=VEN_10DE%26DEV_1C8D
 
 <img src="https://user-images.githubusercontent.com/85984736/156903232-dd130ead-ddce-4e4f-9bab-e295ade4da16.png" width="760">
 
-## How to install drivers
+## How to install downloaded drivers
 
 ### Standard installation (Setup.exe)
 

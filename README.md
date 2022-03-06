@@ -26,8 +26,6 @@ download-drivers.net/search?q=VEN_10DE%26DEV_1C8D
 
 ## First look
 
-<img src="https://user-images.githubusercontent.com/85984736/156902812-c67b44bc-e10f-4382-bf1b-f426923d5500.png" width="760">
-
 <img src="https://user-images.githubusercontent.com/85984736/156903232-dd130ead-ddce-4e4f-9bab-e295ade4da16.png" width="760">
 
 ## How to install downloaded drivers

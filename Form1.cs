@@ -47,11 +47,11 @@ namespace WinFormsApp2
             command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select FriendlyName -ExpandProperty Name | ft -hide > name.log";
             command.Start();
 
-            command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select InstanceId | findstr VEN_ > id.log";
+            command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select InstanceId | findstr /c:VEN_ /c:VID_ > id.log";
             command.Start();
 
             //save Device Instance ID into String -> button Download
-            command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select InstanceId | findstr VEN_";
+            command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select InstanceId | findstr /c:VEN_ /c:VID_";
             command.Start();
             while (!command.StandardOutput.EndOfStream)
             {
@@ -162,11 +162,11 @@ namespace WinFormsApp2
             command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select FriendlyName -ExpandProperty Name | ft -hide > name.log";
             command.Start();
 
-            command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select InstanceId | findstr VEN_ > id.log";
+            command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select InstanceId | findstr /c:VEN_ /c:VID_ > id.log";
             command.Start();
 
             //save Device Instance ID into String -> button Download
-            command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select InstanceId | findstr VEN_";
+            command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select InstanceId | findstr /c:VEN_ /c:VID_";
             command.Start();
             while (!command.StandardOutput.EndOfStream)
             {
@@ -188,19 +188,60 @@ namespace WinFormsApp2
         {
             if (comboBox1.SelectedIndex > -1)
             {
-                //delete all before VEN_
-                int pos = entry.IndexOf("VEN_");
-                if (pos >= 0)
+
+
+                //Detecting device type
+                string[] PCI = new string[]
+                    { "PCI\\" };
+                string[] USB_HID = new string[]
                 {
-                    entryconverted = entry.Remove(0, pos);
+                    "USB\\",
+                    "HID\\"
+                };
+
+                foreach(string s in PCI)
+                {
+                    if (entry.StartsWith(s))
+                    {
+                        //delete all before VEN_
+                        int pos = entry.IndexOf("VEN_");
+                        if (pos >= 0)
+                        {
+                            entryconverted = entry.Remove(0, pos);
+                        }
+
+                        //delete all after &SUBSYS
+                        pos = entryconverted.IndexOf("&SUBSYS");
+                        if (pos >= 0)
+                        {
+                            entry = entryconverted.Remove(pos);
+                        }
+                    }
                 }
 
-                //delete all after &SUBSYS
-                pos = entryconverted.IndexOf("&SUBSYS");
-                if (pos >= 0)
+                foreach (string s in USB_HID)
                 {
-                    entry = entryconverted.Remove(pos);
+                    if (entry.StartsWith(s))
+                    {
+                        //delete all before VEN_
+                        int pos = entry.IndexOf("VID_");
+                        if (pos >= 0)
+                        {
+                            entryconverted = entry.Remove(0, pos);
+                        }
+
+                        //delete all after &SUBSYS
+                        pos = entryconverted.IndexOf("&MI");
+                        if (pos >= 0)
+                        {
+                            entry = entryconverted.Remove(pos);
+                        }
+                    }
                 }
+
+
+
+
 
                 //replace & symbol between VEN_ and DEV_ ids for URL entry
                 entryconverted = entry.Replace("&", "%26");

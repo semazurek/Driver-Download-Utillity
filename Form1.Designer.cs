@@ -167,7 +167,7 @@ namespace WinFormsApp2
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(279, 23);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Driver Download Utility v.1.5";
+            this.label5.Text = "Driver Download Utility v.1.6";
             // 
             // groupBox1
             // 

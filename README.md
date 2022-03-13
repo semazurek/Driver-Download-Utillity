@@ -7,7 +7,15 @@ Download link: <a href="https://minhaskamal.github.io/DownGit/#/home?url=https:/
 
 ## What it does
 
-1) The program extracts data about the name and instance id of the driver:
+1) Scan for drivers with error/problem status by powershell command:
+```
+Get-PnpDevice -Status ERROR | select FriendlyName -ExpandProperty Name | ft -hide
+```
+```
+Get-PnpDevice -Status ERROR | select InstanceId | findstr /c:VEN_ /c:VID_
+```
+
+1) Extracts data about the name and instance id of the driver:
 ```
 3D Video Controller
 PCI\VEN_10DE&DEV_1C8D&SUBSYS_3...

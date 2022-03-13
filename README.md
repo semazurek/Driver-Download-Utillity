@@ -7,19 +7,20 @@ Download link: <a href="https://minhaskamal.github.io/DownGit/#/home?url=https:/
 
 ## What it does
 
-1) The program extracts data about the name and instance id of the driver,
+1) The program extracts data about the name and instance id of the driver:
 ```
 3D Video Controller
 PCI\VEN_10DE&DEV_1C8D&SUBSYS_3...
 ```
 
-2) Converts device instance id data to VEN_ and DEV_ value,
+2) Converts device instance id data to VEN_ and DEV_ (PCI) or VIN_ and DIV_ (USB_HDI) value:
 ```
 3D Video Controller
 VEN_10DE DEV_1C8D
 ```
+3) Checks on the type of selected driver to download for correctly convert its ID
 
-3) Then redirect to the download-drivers.net website with the entered converted id data.
+4) Then redirect to the download-drivers.net website with the entered converted id data:
 ```
 download-drivers.net/search?q=VEN_10DE%26DEV_1C8D
 ```

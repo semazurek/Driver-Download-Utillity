@@ -21,7 +21,7 @@ Get-PnpDevice -Status ERROR | select InstanceId | findstr /c:VEN_ /c:VID_
 PCI\VEN_10DE&DEV_1C8D&SUBSYS_3...
 ```
 
-3) Converts device instance id data to VEN_ and DEV_ (PCI) or VIN_ and DIV_ (USB_HDI) value:
+3) Converts device instance id data to VEN_ and DEV_ (PCI) or VID_ and DIV_ (USB_HDI) value:
 ```
 3D Video Controller
 VEN_10DE DEV_1C8D

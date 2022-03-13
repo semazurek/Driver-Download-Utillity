@@ -15,20 +15,20 @@ Get-PnpDevice -Status ERROR | select FriendlyName -ExpandProperty Name | ft -hid
 Get-PnpDevice -Status ERROR | select InstanceId | findstr /c:VEN_ /c:VID_
 ```
 
-1) Extracts data about the name and instance id of the driver:
+2) Extracts data about the name and instance id of the driver:
 ```
 3D Video Controller
 PCI\VEN_10DE&DEV_1C8D&SUBSYS_3...
 ```
 
-2) Converts device instance id data to VEN_ and DEV_ (PCI) or VIN_ and DIV_ (USB_HDI) value:
+3) Converts device instance id data to VEN_ and DEV_ (PCI) or VIN_ and DIV_ (USB_HDI) value:
 ```
 3D Video Controller
 VEN_10DE DEV_1C8D
 ```
-3) Checks on the type of selected driver to download for correctly convert its ID
+4) Checks on the type of selected driver to download for correctly convert its ID
 
-4) Then redirect to the download-drivers.net website with the entered converted id data:
+5) Then redirect to the download-drivers.net website with the entered converted id data:
 ```
 download-drivers.net/search?q=VEN_10DE%26DEV_1C8D
 ```

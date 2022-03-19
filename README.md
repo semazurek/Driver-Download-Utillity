@@ -4,6 +4,7 @@ Application created for Windows 10/11, looking for drivers that were not install
 (Like couldn't find by windows update etc.)
 
 Download link: <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/semazurek/Driver-Download-Utillity/blob/main/DDU.exe"> DDU.exe </a>
+Donate link: <a href="https://paypal.me/rikey" target="_blank">PayPal</a>
 
 ## What it does
 

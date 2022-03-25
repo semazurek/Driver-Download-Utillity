@@ -1,4 +1,10 @@
 # Driver-Download-Utillity
+
+<a href="#"><img src="https://img.shields.io/badge/RELEASE-v1.6-orange?style=for-the-badge&"></a>
+<a href="#"><img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"></a>
+<a href="#"><img src="https://img.shields.io/badge/powershell-5391FE?style=for-the-badge&logo=powershell&logoColor=white"></a>
+<a href="https://paypal.me/rikey" target="_blank"><img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white"></a>
+
 Application created for Windows 10/11, looking for drivers that were not installed for some reason.
 
 (Like couldn't find by windows update etc.)

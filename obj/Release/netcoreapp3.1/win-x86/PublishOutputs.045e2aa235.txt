@@ -1,0 +1,2 @@
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\bin\Release\netcoreapp3.1\publish\DDU.pdb
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\bin\Release\netcoreapp3.1\publish\DDU.exe

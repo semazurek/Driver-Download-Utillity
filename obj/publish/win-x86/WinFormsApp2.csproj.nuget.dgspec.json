@@ -11,7 +11,7 @@
         "projectName": "DDU",
         "projectPath": "C:\\Users\\Rikey\\source\\repos\\DEVCsharp\\WinFormsApp2\\WinFormsApp2.csproj",
         "packagesPath": "C:\\Users\\Rikey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rikey\\source\\repos\\DEVCsharp\\WinFormsApp2\\obj\\",
+        "outputPath": "C:\\Users\\Rikey\\source\\repos\\DEVCsharp\\WinFormsApp2\\obj\\publish\\win-x86\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rikey\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -47,6 +47,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
+              "version": "[3.1.22, 3.1.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x86",
+              "version": "[3.1.22, 3.1.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
+              "version": "[3.1.22, 3.1.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -56,6 +70,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
         }
       }
     }

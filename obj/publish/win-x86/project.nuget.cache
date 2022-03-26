@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "HO0jXqI1Y2FmPnQ/x98nMUBIZKxSRp0XjJ4qU1/A0TZs51I9TVoX5OlCfgcKRvmsNRmFlSYU4WyQ29bfor0Hdg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Rikey\\source\\repos\\DEVCsharp\\WinFormsApp2\\WinFormsApp2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rikey\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\3.1.22\\microsoft.netcore.app.runtime.win-x86.3.1.22.nupkg.sha512",
+    "C:\\Users\\Rikey\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\3.1.22\\microsoft.windowsdesktop.app.runtime.win-x86.3.1.22.nupkg.sha512",
+    "C:\\Users\\Rikey\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\3.1.22\\microsoft.aspnetcore.app.runtime.win-x86.3.1.22.nupkg.sha512"
+  ],
+  "logs": []
+}

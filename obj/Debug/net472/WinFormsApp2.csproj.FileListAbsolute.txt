@@ -1,0 +1,12 @@
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\obj\Debug\net472\WinFormsApp2.csproj.AssemblyReference.cache
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\obj\Debug\net472\DDU.Form1.resources
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\obj\Debug\net472\WinFormsApp2.csproj.GenerateResource.cache
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\obj\Debug\net472\WinFormsApp2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\obj\Debug\net472\WinFormsApp2.AssemblyInfoInputs.cache
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\obj\Debug\net472\WinFormsApp2.AssemblyInfo.cs
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\obj\Debug\net472\WinFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\bin\Debug\net472\DDU.exe.config
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\bin\Debug\net472\DDU.exe
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\bin\Debug\net472\DDU.pdb
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\obj\Debug\net472\DDU.exe
+C:\Users\Rikey\source\repos\DEVCsharp\WinFormsApp2\obj\Debug\net472\DDU.pdb

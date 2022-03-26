@@ -74,7 +74,7 @@ namespace WinFormsApp2
             this.richTextBox1.Size = new System.Drawing.Size(495, 120);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.TabStop = false;
-            this.richTextBox1.Text = "Loading...";
+            this.richTextBox1.Text = "Unknown Device";
             // 
             // button2
             // 
@@ -167,7 +167,7 @@ namespace WinFormsApp2
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(279, 23);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Driver Download Utility v.1.6";
+            this.label5.Text = "Driver Download Utility v.1.7";
             // 
             // groupBox1
             // 
@@ -186,9 +186,9 @@ namespace WinFormsApp2
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(122, 219);
+            this.comboBox1.Location = new System.Drawing.Point(118, 219);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(427, 29);
+            this.comboBox1.Size = new System.Drawing.Size(431, 29);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
             this.comboBox1.MouseEnter += new System.EventHandler(this.comboBox1_MouseEnter);
@@ -209,7 +209,7 @@ namespace WinFormsApp2
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
-            this.Text = "Driver Download Utillity";
+            this.Text = "z";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

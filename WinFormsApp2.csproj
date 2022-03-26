@@ -8,6 +8,8 @@
     <AssemblyName>DDU</AssemblyName>
     <RootNamespace>DDU</RootNamespace>
     <ApplicationIcon>icn0.ico</ApplicationIcon>
+    <Authors>Rikey</Authors>
+    <Version>1.7</Version>
   </PropertyGroup>
 
 </Project>

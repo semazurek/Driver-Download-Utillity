@@ -23,7 +23,7 @@ namespace WinFormsApp2
             InitializeComponent();
         }
 
-        string line, lineall, entryconverted, entry;
+        string line, line2, lineall, entryconverted, entry;
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -51,14 +51,21 @@ namespace WinFormsApp2
             command.Start();
 
             //save Device Instance ID into String -> button Download
+            command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select InstanceId | findstr /c:VEN_ /c:VID_; $?";
+            command.Start();
+            while (!command.StandardOutput.EndOfStream)
+            {
+                line2 = command.StandardOutput.ReadLine();
+            }//True or False checking
+
             command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select InstanceId | findstr /c:VEN_ /c:VID_";
             command.Start();
             while (!command.StandardOutput.EndOfStream)
             {
                 line = command.StandardOutput.ReadLine();
-            }
+            }//Default line checking
 
-            if (line == " " || line == "")
+            if (line == " " || line == "" || line2 == "False")
             {
                 richTextBox1.Text = "Nothing to do here.";
                 MessageBox.Show("No drivers required to be installed were found.","Information");
@@ -124,6 +131,10 @@ namespace WinFormsApp2
             {
                 comboBox1.Items.Add(s);
             }
+            if (new FileInfo("name.log").Length==0)
+            {
+                comboBox1.Items.Add("Unknown Device");
+            }
             sr.Close();
 
             StreamReader sr2 = File.OpenText("id.log");
@@ -166,29 +177,34 @@ namespace WinFormsApp2
             command.Start();
 
             //save Device Instance ID into String -> button Download
+            command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select InstanceId | findstr /c:VEN_ /c:VID_; $?";
+            command.Start();
+            while (!command.StandardOutput.EndOfStream)
+            {
+                line2 = command.StandardOutput.ReadLine();
+            }//True or False checking
+
             command.StartInfo.Arguments = "Get-PnpDevice -Status ERROR | select InstanceId | findstr /c:VEN_ /c:VID_";
             command.Start();
             while (!command.StandardOutput.EndOfStream)
             {
                 line = command.StandardOutput.ReadLine();
-            }
+            }//Default line checking
 
-            if (line == " " || line == "")
+            if (line == " " || line == "" || line2 == "False")
             {
                 MessageBox.Show("No drivers required to be installed were found.", "Information");
                 richTextBox1.Text = "Nothing to do here.";
-
                 command.StartInfo.Arguments = "rm id.log; rm name.log";
                 command.Start();
-
                 Application.Exit();
             }
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex > -1)
             {
-
 
                 //Detecting device type
                 string[] PCI = new string[]
@@ -236,11 +252,20 @@ namespace WinFormsApp2
                         {
                             entry = entryconverted.Remove(pos);
                         }
+
+                        pos = entryconverted.IndexOf("\\5&");
+                        if (pos >= 0)
+                        {
+                            entry = entryconverted.Remove(pos);
+                        }
+
+                        pos = entryconverted.IndexOf("\\5");
+                        if (pos >= 0)
+                        {
+                            entry = entryconverted.Remove(pos);
+                        }
                     }
                 }
-
-
-
 
 
                 //replace & symbol between VEN_ and DEV_ ids for URL entry
